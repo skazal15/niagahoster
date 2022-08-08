@@ -5,6 +5,10 @@
         visibility: hidden;
     }
 
+    .navbar-light .navbar-toggler {
+        margin-left: 30%;
+    }
+
     /* Navbar */
     .navbar{
         position: fixed; 
@@ -22,6 +26,7 @@
     .navbar-brand {
         font-family: Montserrat;
     }
+    
 
     /* Container */
     .container{
