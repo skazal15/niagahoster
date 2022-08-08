@@ -1,0 +1,1548 @@
+@media (max-width: 800px) {
+    /* Navbar Subnav */
+    .navbar-subnav{
+        display: none;
+        visibility: hidden;
+    }
+
+    /* Navbar */
+    .navbar{
+        position: fixed; 
+        top: 0; 
+        width: 100%; 
+        background-color: white;
+        opacity:98%;
+        z-index: 4;
+        padding: 0 0 0 0;
+        border-top: 0.5px solid #f2f2f2;
+        border-bottom: 0.5px solid #f2f2f2;
+        padding-top: 10px;
+    }
+
+    .navbar-brand {
+        font-family: Montserrat;
+    }
+
+    /* Container */
+    .container{
+        margin-right: auto;
+    }
+
+    /* hr */
+    hr{
+        width: 100%;
+    }
+
+    /* PHP Hosting */
+    .php-hosting{
+        font-family: Montserrat;
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+
+    .php-hosting h1{
+        color: #4c4c4c; 
+        font-weight: 600;
+    }
+
+    .php-hosting h3{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        line-height: 30px;
+        font-size: 16px;
+    }
+
+    .php-hosting ul li{
+        margin-top: 10px;
+    }
+
+    .php-hosting ul li i{
+        color:#00b348;
+        font-size:20px;
+        margin-left: -37px;
+        margin-right: 5px;
+    }
+
+    .php-hosting li{
+        font-size: 14px;
+    }
+
+    /* PHP 2 */
+    .php-2{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .php-2 p{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .php-2 .col-lg{
+        margin-bottom: 20px;
+    }
+
+    /* Paket Hosting */
+    .paket-hosting{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .paket-hosting h3{
+        font-weight: 700;
+        line-height: 40px;
+    }
+
+    .paket-hosting h4{
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .paket-hosting .row{
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    .paket-hosting .row .nama-paket{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .paket-hosting .row .col-lg{
+        border: 0.5px solid #f0f2f4;
+        border-radius: 5px;
+        margin: 10px 0;
+    }
+
+    .paket-hosting .row .col-lg:hover{
+        border: 1px solid #008fee;
+    }
+
+    .paket-hosting .row .harga-paket{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .paket-hosting .row .harga-paket sup{
+        font-size: 62%;
+    }
+
+    .paket-hosting .row .pengguna-paket{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+
+    .paket-hosting .row .detail-paket{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 12px;
+        line-height: 10px;
+    }
+
+    .paket-hosting .row .btn-paket{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 13px 20px 13px 20px;
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 10px;
+        color: #4c4c4c; 
+        border: 2px solid #4c4c4c;
+        border-radius: 30px;
+    }
+
+    .paket-hosting .row .btn-paket:hover{
+        background-color: #008fee;
+        color: white;
+        border: 0.5px solid #008fee;
+    }
+
+    .paket-hosting .row .hosting-package-personal{
+        border-radius: 5px;
+        border: 1px solid #008fee;
+        background-color: #008fee;
+        padding:0;
+        margin:0 15px;
+        color: white;
+    }
+
+    .paket-hosting .row .hosting-package-personal .pengguna-paket{
+        background-color: #007fde;
+        margin:0;
+        padding:16px 0 5px 0 ;
+    } 
+
+    .paket-hosting .row .hosting-package-personal .detail-paket{
+        background-color: white;
+        color: #4c4c4c;
+        padding: 20px;
+        margin: 0;
+    } 
+
+    .paket-hosting .row .hosting-package-personal .btn-paket-box{
+        /* margin-top: 20px;
+        margin-bottom: 20px; */
+        /* margin: 13px 20px 13px 20px; */
+        background-color: white;
+        color: #008fee;
+    }
+
+    .paket-hosting .row .hosting-package-personal .btn-paket{
+        background-color: #008fee;
+        color: white;
+        border: 0.5px solid #008fee;
+    }
+
+    .paket-hosting .row .hosting-package-personal .btn-paket:hover{
+        color: #008fee; 
+        border: 2px solid #008fee;
+        background-color: white;
+    }
+
+    /* RIBBON PERSONAL */
+    .paket-hosting .ribbon {
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        position: absolute;
+    }
+    .paket-hosting .ribbon::before,
+    /*.paket-hosting .ribbon::after {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        display: block;
+        border: 5px solid #00b359;
+    } */
+    .paket-hosting .ribbon span {
+        position: absolute;
+        display: block;
+        width: 225px;
+        padding: 20px 0;
+        background-color: #00b359;
+        box-shadow: 0 5px 10px rgba(0,0,0,.3);
+        color: #fff;
+        font: 700 14px/1 'Montserrat';
+        text-shadow: 0 1px 1px rgba(0,0,0,.2);
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    /* RIBBON LEFT*/
+    .paket-hosting .ribbon-top-left {
+        top: -10px;
+        left: -10px;
+    }
+    .paket-hosting .ribbon-top-left::before,
+    .paket-hosting  .ribbon-top-left::after {
+        border-top-color: transparent;
+        border-left-color: transparent;
+    }
+    .paket-hosting .ribbon-top-left::before {
+        top: 0;
+        right: 0;
+    }
+    .paket-hosting .ribbon-top-left::after {
+        bottom: 0;
+        left: 0;
+    }
+    .paket-hosting .ribbon-top-left span {
+        right: -5px;
+        top: 20px;
+        transform: rotate(-45deg);
+    }
+
+    .checked{
+        color:#008fee;
+        margin-bottom: 10px;
+    }
+
+    /* Powerful */
+    .powerful {
+        font-weight: initial;
+        margin-bottom: 50px;
+    }
+
+
+    .powerful h3{
+        font-weight: initial;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .powerful .col-10 table {
+        border: 0.5px solid #f0f2f4;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    .powerful .col-10 th, td {
+        text-align: center;
+        padding: 8px;
+        font-family: Montserrat;
+    }
+    
+    .powerful .col-10 tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .powerful i{
+        color:#00b348;
+        font-size:15px;
+    }
+
+    /* Semua Paket */
+    .semua-paket object {
+        width: 20%;
+        margin: 20px 0 10px 0;
+    }
+
+    .semua-paket{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .semua-paket h3{
+        font-weight: initial;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .semua-paket h4{
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        font-size:16px;
+    }
+
+    .semua-paket p{
+        font-family: Montserrat;
+        font-size:12px;
+    }
+
+    /* Laravel */
+    .laravel{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .laravel h3{
+        font-weight: initial;
+        margin-bottom: 30px;
+    }
+
+    .laravel h6{
+        color: #4c4c4c; 
+        font-family: Montserrat;
+        font-weight: initial;
+        line-height: 25px;
+        font-size:16px;
+    }
+
+    .laravel ul li{
+        margin-top: 12px;
+        font-family: Montserrat ;
+        font-size:14px;
+    }
+
+    .laravel ul li i{
+        color:#00b348;
+        font-size:20px;
+        margin-left: -30px;
+        margin-right: 5px;
+    }
+
+    .laravel p{
+        font-family: Montserrat;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    .laravel .col-lg#btn-pilih{
+        display: flex; 
+        justify-content: center;
+    }
+
+
+    .laravel .btn-pilih{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 13px 20px 13px 20px;
+        font-family: Montserrat;
+        font-stretch: expanded;
+        font-size: 15px;
+        font-weight: 800;
+        line-height: 10px;
+        background-color: #0090ef;
+        color: white; 
+        border: 2px solid #0090ef;
+        border-radius: 30px;
+    }
+
+    .laravel .a#btn-pilih{
+        display: flex; 
+        justify-content: center    }
+
+    .laravel .row .btn-pilih:hover{
+        background-color: white;
+        color: #0090ef;
+        border: 0.5px solid #0090ef;
+    }
+
+    .laravel object svg{
+        margin-top: 20px;
+    }
+
+    /* Modul */
+    .modul {
+        font-weight: initial;
+        margin-bottom: 50px;
+    }
+
+    .modul h3{
+        font-weight: initial;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .modul .col-10 table {
+        border-collapse: collapse;
+        width: 100%;
+        margin-top: 20px;
+    }
+    
+    .modul .col-10 th, td {
+        text-align: center;
+        padding: 2px;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 500;
+    }
+
+    .modul .col-10 .btn-selengkapnya{
+        margin-top: 40px;
+        margin-bottom: 20px;
+        padding: 13px 30px 13px 30px;
+        font-family: Montserrat;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 10px;
+        letter-spacing: 0;
+        color: #4c4c4c; 
+        border: 2px solid #4c4c4c;
+        border-radius: 30px;
+    }
+
+    .modul .col-10 .btn-selengkapnya:hover{
+        background-color: #008fee;
+        color: white;
+        border: 0.5px solid #008fee;
+    }
+
+    /* Linux */
+    .linux{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .linux h3{
+        font-weight: initial;
+        margin-bottom: 30px;
+    }
+
+    .linux p{
+        font-family: Montserrat;
+        font-size: 14px;
+        margin-top: 20px;
+        font-weight: inherit;
+    }
+
+    .linux .col-lg-6#linux-img{
+        display: flex; 
+        justify-content: center;
+    }
+
+    .linux .btn-pilih{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 13px 20px 13px 20px;
+        font-family: Montserrat;
+        font-stretch: expanded;
+        font-size: 15px;
+        font-weight: 800;
+        line-height: 10px;
+        background-color: #0090ef;
+        color: white; 
+        border: 2px solid #0090ef;
+        border-radius: 30px;
+    }
+
+    .linux .row .btn-pilih:hover{
+        background-color: white;
+        color: #0090ef;
+        border: 0.5px solid #0090ef;
+    }
+
+    .linux img{
+        margin-top: 20px;
+    }
+
+    /* Bagikan */
+    .container-fluid .bagikan{
+        margin-top: 10px;
+        background-color: #f7f7f7;
+    }
+
+    .bagikan p{
+        font-family: Montserrat;
+        font-size: 14px;
+        margin-top: 30px;
+        margin-left: 15%;
+        color:#595959;
+    }
+
+    .bagikan .row{
+        text-align: center;
+    }
+
+    .bagikan .col-lg-3{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .bagikan .col-lg-3 .fab {
+        padding: 8px;
+        font-size: 13px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+    }
+
+    .bagikan .col-lg-3 .fab a {
+        padding: 8px;
+        font-size: 30px;
+        width: 20px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+    }
+
+    .bagikan .col-lg-3 .fa-facebook-f {
+        background: #3B5998;
+        color: white;
+        border-radius: 20%;
+    }
+
+    .bagikan .col-lg-3 .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    border-radius: 20%;
+    }
+
+    .bagikan .col-lg-3 .fa-google {
+    background: #dd4b39;
+    color: white;
+    border-radius: 20%;
+    }
+
+    .bagikan .col-lg-3 span {
+        font-size: 12px;
+        color:#acacb1;
+        background-color: #f7f7f7;
+        border: 1px solid #e1e1e1;
+        padding: 3px 8px 3px 8px;
+    }
+
+    /* Bantuan */
+    .container-fluid .bantuan{
+        background-color: #00a2f3;
+        color:white;
+    }
+
+    .bantuan .row{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .bantuan h3{
+        font-family: Montserrat;
+        margin-top: 35px;
+        margin-left: 13%;
+    }
+
+    .bantuan .col-lg-3{
+        display: flex; 
+        justify-content: center;
+    }
+
+    .bantuan .btn-chat{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px 25px 10px 25px;
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 10px;
+        background-color:none;
+        color: white; 
+        border: 2px solid white;
+        border-radius: 30px;
+    }
+
+    .bantuan .btn-chat:hover{
+        background-color: white;
+        color: #0090ef;
+        border: 0.5px solid #0090ef;
+    }
+
+    .far{
+        font-size:20px;
+        margin-right: 10px;
+    }
+
+    .footer{
+    background-color:#303030;
+    padding:50px 20px 15px 20px;
+    font-size:15px;
+    line-height:24px;
+    color:#7f7f7f;
+    }
+
+    .footer .container{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .footer-column-title{
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .footer-contact{
+        font-size: 12px;
+        color:#c5c5c5;
+    }
+
+    .footer-contact a{
+        color:#c5c5c5;
+    }
+
+    .footer-address{
+        font-size: 12px;
+        color:#c5c5c5;
+    }
+
+    .footer-menu-list a{
+        font-size: 12px;
+        color:#c5c5c5;
+    }
+
+    .footer-pembayaran{
+        font-size: 12px;
+        color:#606060;
+    }
+
+    .footer-pembayaran object{
+        max-height:25px; 
+        margin-right:5px;
+        padding: 5px;
+        border:0.5px solid #606060;
+        border-radius:5px;
+    }
+
+    /* .footer-pembayaran path{
+        color:red;
+    } */
+
+
+    .footer ul{
+        list-style-type:none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .newsletter .form-control {
+        width:230px;
+        height: 45px;
+        padding-left: 20px;
+        border-color: #ffffff;
+        border-radius:50px;
+        font-family: Montserrat;
+        font-size: 12px;
+        color: #b3b3b3;
+        background-color: white;
+        position: relative;
+    }
+
+    .newsletter .btn {
+        margin-top: -73px;
+        margin-left: 113px;
+        height: 35px; 
+        border-radius:0;
+        background: blue;
+        color: #fff;
+        font-family: Montserrat;
+        font-weight:light;
+        font-size:12px;
+        border-radius:30px;
+        background: #0090ef;
+        position: relative;
+        z-index: 99; 
+    }
+
+    .newsletter p {
+        margin-top: 1px;
+        line-height: 20px;
+    }
+
+    .footer-copyright{
+        font-size: 10px;
+        color:#c5c5c5;
+    }
+
+    .footer-privacy-policy {
+        font-size: 10px;
+        color:#c5c5c5;
+    }
+
+    .footer-privacy-policy a{
+        color:#c5c5c5;
+    }
+
+    .footer-social-icon-list .fab {
+    padding: 15px;
+    font-size: 15px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 10px;
+    border-radius: 50%;
+    border: 2px solid #d4d4d4;
+    color:#d4d4d4;  
+    }
+
+}
+/* DESKTOP VERSION */
+@media (min-width: 800px) {
+
+    /* Navbar */
+    .navbar-subnav{
+        margin-top: -8px;
+        margin-bottom: 0;
+        z-index: 5;
+    }
+
+    /* Subnav Ribbon */
+    .navbar-subnav .ribbon{
+        width:20px;
+        height:20px;
+        background-color:#0b70ff;
+        position:absolute;
+        /* // right:100px; */
+        top:-350px;
+        animation:drop forwards .8s 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+        /* // &:after{
+        // 	content:'';
+        // 	width:200px;
+        // 	height:270px;
+        // 	position: absolute;
+        // 	z-index: -1;
+        // 	left: 0;
+        // 	bottom:-120px;
+        // 	background-color:$shadow;
+        // 	transform:skewY(35deg) skewX(0);
+        // } */
+    }
+    .navbar-subnav .ribbon::before{
+        content: '';
+        position: absolute;
+        z-index: 2;
+        left: 0;
+        bottom: -10px;
+        border-left: 10px solid #0b70ff;
+        border-right: 10px solid #0b70ff;
+        border-bottom: 10px solid transparent;
+    }
+    @keyframes drop{
+        0%		{ top:-350px; }
+        100%	{ top:0; }
+    }
+
+    /* Subnav Left*/
+    .navbar-subnav-left{
+        float: left;
+        font-size: 12px;
+        font-family: Montserrat;
+    }
+
+    .navbar-subnav-left li{
+        margin-left: 8px;
+        float: left;
+        font-size: 10px;
+        list-style-type: none;
+    }
+
+    .navbar-subnav-left .nav-link{
+        font-family: Montserrat;
+        font-size: 10px;
+        font-weight: normal;
+        color: #4c4c4c; 
+    }
+
+    .navbar-subnav-left .nav-link:hover{
+        color: #0b70ff;
+    }
+
+    /* Subnav Right */
+    .navbar-subnav-right{
+        float: left;
+        font-family: Montserrat;
+        font-size: 12px;
+        margin-right: 30px;
+        padding-top: 10px;
+    }
+
+    .navbar-subnav-right .nav-link{
+        float: left;
+        font-family: Montserrat;
+        font-size: 12px;
+        color: #4c4c4c; 
+
+    }
+
+    .navbar-subnav-right .nav-link:hover{
+        color: #0b70ff;
+    }
+
+    .navbar-subnav-right li{
+        display: inline;
+        margin-right: 10px;
+        margin-left: 2px;
+        padding-top: 15px;
+    }
+
+    .navbar-subnav-right .far{
+        margin-right: 10px;
+        margin-left: 2px;
+        font-size:15px
+    }
+
+    .navbar-subnav-right .fas{
+        margin-right: 10px;
+        margin-left: 2px;
+        font-size:15px
+    }
+
+    /* Navbar */
+    .navbar{
+        position: fixed; 
+        top: 0; 
+        width: 100%; 
+        background-color: white;
+        opacity:98%;
+        z-index: 4;
+        padding: 0 0 0 0;
+        border-top: 0.5px solid #f2f2f2;
+        border-bottom: 0.5px solid #f2f2f2;
+        padding-top: 10px;
+    }
+    .navbar-brand {
+        font-family: Montserrat;
+    }
+    .navbar-fixed {
+       padding-top: 28px;
+    }
+    .navbar-fixed .nav-link{
+        font-family: Montserrat;
+        font-size: 13px;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+    
+    .navbar-fixed .nav-link:hover::after{
+        content:'';
+        display: block;
+        border-bottom: 3px solid #0b70ff;
+        width: 50%;
+        margin:auto;
+        padding-bottom: 10px;
+        margin-bottom: -13px;
+    }
+
+    /* Container */
+    .container{
+        margin-right: auto;
+    }
+
+    /* hr */
+    hr{
+        width: 100%;
+    }
+
+    /* PHP Hosting */
+    .php-hosting{
+        font-family: Montserrat;
+        margin-top: 150px;
+        margin-bottom: 50px;
+    }
+
+    .php-hosting h1{
+        color: #4c4c4c; 
+        font-weight: 600;
+    }
+
+    .php-hosting h3{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        line-height: 40px;
+        font-weight: 0;
+    }
+
+    .php-hosting ul li{
+        margin-top: 10px;
+    }
+
+    .php-hosting ul li i{
+        color:#00b348;
+        font-size:20px;
+        margin-left: -37px;
+        margin-right: 5px;
+    }
+
+    /* PHP 2 */
+    .php-2{
+        margin-top: 290px;
+        margin-bottom: 50px;
+    }
+
+    .php-2 p{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+  
+    .php-2 .col-lg#php-2-left{
+        position: absolute; 
+        bottom: 0; 
+        text-align:left;
+    }
+
+    .php-2 .col-lg#php-2-center{
+        position: absolute; 
+        bottom: 0; 
+        text-align:center;
+    }
+
+    .php-2 .col-lg#php-2-right{
+        position: absolute; 
+        bottom: 0; 
+        text-align:right;
+    }
+
+
+    /* Paket Hosting */
+    .paket-hosting{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .paket-hosting h3{
+    font-weight: 700;
+    }
+
+    .paket-hosting h4{
+        font-weight: 400;
+    }
+
+    .paket-hosting .row{
+        margin-top: 30px;
+        margin-bottom: 50px;
+    }
+
+    .paket-hosting .row .nama-paket{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .paket-hosting .row .col-lg{
+        border: 0.5px solid #f0f2f4;
+        border-radius: 5px;
+    }
+
+    .paket-hosting .row .col-lg:hover{
+        border: 1px solid #008fee;
+    }
+
+    .paket-hosting .row .harga-paket{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .paket-hosting .row .pengguna-paket{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+
+    .paket-hosting .row .detail-paket{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 12px;
+        line-height: 10px;
+    }
+
+    .paket-hosting .row .btn-paket{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 13px 20px 13px 20px;
+        font-size: 12px;
+        font-weight: 800;
+        line-height: 10px;
+        color: #4c4c4c; 
+        border: 2px solid #4c4c4c;
+        border-radius: 30px;
+    }
+
+    .paket-hosting .row .btn-paket:hover{
+        background-color: #008fee;
+        color: white;
+        border: 0.5px solid #008fee;
+    }
+
+    .paket-hosting .row .hosting-package-personal{
+        border-radius: 5px;
+        border: 1px solid #008fee;
+        background-color: #008fee;
+        padding:0;
+        margin:0 15px;
+        color: white;
+    }
+
+    .paket-hosting .row .hosting-package-personal .pengguna-paket{
+        background-color: #007fde;
+        margin:0;
+        padding:16px 0 5px 0 ;
+    } 
+
+    .paket-hosting .row .hosting-package-personal .detail-paket{
+        background-color: white;
+        color: #4c4c4c;
+        padding: 20px;
+        margin: 0;
+    } 
+
+    .paket-hosting .row .hosting-package-personal .btn-paket-box{
+        /* margin-top: 20px;
+        margin-bottom: 20px; */
+        /* margin: 13px 20px 13px 20px; */
+        background-color: white;
+        color: #008fee;
+    }
+
+    .paket-hosting .row .hosting-package-personal .btn-paket{
+        background-color: #008fee;
+        color: white;
+        border: 0.5px solid #008fee;
+    }
+
+    .paket-hosting .row .hosting-package-personal .btn-paket:hover{
+        color: #008fee; 
+        border: 2px solid #008fee;
+        background-color: white;
+    }
+
+    /* RIBBON PERSONAL */
+    .paket-hosting .ribbon {
+        width: 150px;
+        height: 150px;
+        overflow: hidden;
+        position: absolute;
+    }
+    .paket-hosting .ribbon::before,
+    /*.paket-hosting .ribbon::after {
+        position: absolute;
+        z-index: -1;
+        content: '';
+        display: block;
+        border: 5px solid #00b359;
+    } */
+    .paket-hosting .ribbon span {
+        position: absolute;
+        display: block;
+        width: 120px;
+        padding: 10px 0;
+        background-color: #00b359;
+        box-shadow: 0 5px 10px rgba(0,0,0,.3);
+        color: #fff;
+        font: 700 10px/1 'Montserrat';
+        text-shadow: 0 1px 1px rgba(0,0,0,.2);
+        text-transform: uppercase;
+        text-align: center;
+    }
+    
+    /* RIBBON LEFT*/
+    .paket-hosting .ribbon-top-left {
+        top: -10px;
+        left: -10px;
+    }
+    .paket-hosting .ribbon-top-left::before,
+    .paket-hosting  .ribbon-top-left::after {
+        border-top-color: transparent;
+        border-left-color: transparent;
+    }
+    .paket-hosting .ribbon-top-left::before {
+        top: 0;
+        right: 0;
+    }
+    .paket-hosting .ribbon-top-left::after {
+        bottom: 0;
+        left: 0;
+    }
+    .paket-hosting .ribbon-top-left span {
+        right: 60px;
+        top: 16px;
+        transform: rotate(-40deg);
+    }
+
+    .checked{
+        color:#008fee;
+        margin-bottom: 10px;
+    }
+
+    /* Powerful */
+    .powerful {
+        font-weight: initial;
+        margin-bottom: 50px;
+    }
+
+
+    .powerful h3{
+        font-weight: initial;
+        margin-bottom: 30px;
+    }
+
+    .powerful .col-10 table {
+        border: 0.5px solid #f0f2f4;
+        border-collapse: collapse;
+        width: 100%;
+    }
+    
+    .powerful .col-10 th, td {
+        text-align: center;
+        padding: 8px;
+        font-family: Montserrat;
+    }
+    
+    .powerful .col-10 tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .powerful i{
+        color:#00b348;
+        font-size:20px;
+    }
+
+    /* Semua Paket */
+    .semua-paket object {
+        width: 20%;
+        margin: 20px 0 10px 0;
+    }
+
+    .semua-paket{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .semua-paket h3{
+        font-weight: initial;
+        margin-bottom: 30px;
+    }
+
+    .semua-paket h4{
+        font-weight: bold;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .semua-paket p{
+        font-family: Montserrat;
+    }
+
+    /* Laravel */
+    .laravel{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .laravel h3{
+        font-weight: initial;
+        font-family: 'Montserrat';
+        margin-bottom: 30px;
+    }
+
+    .laravel h6{
+        color: #4c4c4c; 
+        font-family: Montserrat;
+        margin-right: 25%;
+        font-weight: initial;
+        line-height: 30px;
+    }
+
+    .laravel ul li{
+        margin-top: 15px;
+        font-size: small;
+    }
+
+    .laravel ul li i{
+        color:#00b348;
+        font-size:20px;
+        margin-left: -37px;
+        margin-right: 5px;
+    }
+
+    .laravel p{
+        font-family: Montserrat;
+        font-size: 12px;
+        margin-top: 20px;
+    }
+
+    .laravel .btn-pilih{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 13px 20px 13px 20px;
+        font-stretch: expanded;
+        font-size: 15px;
+        font-weight: 800;
+        line-height: 10px;
+        background-color: #0090ef;
+        color: white; 
+        border: 2px solid #0090ef;
+        border-radius: 30px;
+    }
+
+    .laravel .row .btn-pilih:hover{
+        background-color: white;
+        color: #0090ef;
+        border: 0.5px solid #0090ef;
+    }
+
+    /* Modul */
+    .modul {
+        font-weight: initial;
+        margin-bottom: 50px;
+    }
+
+    .modul h3{
+        font-weight: initial;
+        margin-bottom: 30px;
+    }
+
+    .modul .col-10 table {
+        border-collapse: collapse;
+        width: 86%;
+        table-layout: fixed;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .modul .col-10 th, td {
+        text-align: center;
+        padding: 2px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+
+    .modul .col-10 .btn-selengkapnya{
+        margin-top: 40px;
+        margin-bottom: 20px;
+        padding: 13px 30px 13px 30px;
+        font-family: Montserrat;
+        margin-left: 34%;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 10px;
+        letter-spacing: 0;
+        color: #4c4c4c; 
+        border: 2px solid #4c4c4c;
+        border-radius: 30px;
+    }
+
+    .modul .col-10 .btn-selengkapnya:hover{
+        background-color: #008fee;
+        color: white;
+        border: 0.5px solid #008fee;
+    }
+
+    /* Linux */
+    .linux{
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+
+    .linux h3{
+        font-weight: initial;
+        margin-bottom: 30px;
+    }
+
+    .linux p{
+        font-size: 14px;
+        margin-right: 16%;
+        margin-top: 20px;
+        font-weight: inherit;
+    }
+
+    .linux .btn-pilih{
+        margin-top: 10px;
+        margin-bottom: 20px;
+        padding: 13px 20px 13px 20px;
+        font-stretch: expanded;
+        font-size: 15px;
+        font-weight: 800;
+        line-height: 10px;
+        background-color: #0090ef;
+        color: white; 
+        border: 2px solid #0090ef;
+        border-radius: 30px;
+    }
+
+    .linux .row .btn-pilih:hover{
+        background-color: white;
+        color: #0090ef;
+        border: 0.5px solid #0090ef;
+    }
+
+    /* Bagikan */
+    .container-fluid .bagikan{
+        margin-top: 10px;
+        background-color: #f7f7f7;
+    }
+
+    .bagikan p{
+        font-family: Montserrat;
+        font-size: 14px;
+        margin-top: 30px;
+        margin-left: 15%;
+        color:#595959;
+    }
+
+    .bagikan .col-lg-3{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .bagikan .col-lg-3 .fab {
+        padding: 8px;
+        font-size: 13px;
+        width: 30px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+    }
+
+    .bagikan .col-lg-3 .fab a {
+        padding: 8px;
+        font-size: 30px;
+        width: 20px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 2px;
+    }
+
+    .bagikan .col-lg-3 .fa-facebook-f {
+        background: #3B5998;
+        color: white;
+        border-radius: 20%;
+    }
+
+    .bagikan .col-lg-3 .fa-twitter {
+    background: #55ACEE;
+    color: white;
+    border-radius: 20%;
+    }
+
+    .bagikan .col-lg-3 .fa-google {
+    background: #dd4b39;
+    color: white;
+    border-radius: 20%;
+    }
+
+    .bagikan .col-lg-3 span {
+        font-size: 12px;
+        color:#acacb1;
+        background-color: #f7f7f7;
+        border: 1px solid #e1e1e1;
+        padding: 3px 8px 3px 8px;
+    }
+
+    /* Bantuan */
+    .container-fluid .bantuan{
+        background-color: #00a2f3;
+        color:white;
+    }
+
+    .bantuan .row{
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+    .bantuan h3{
+        margin-top: 35px;
+        margin-left: 13%;
+    }
+
+
+    .bantuan .btn-chat{
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 10px 25px 10px 25px;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 10px;
+        background-color:none;
+        color: white; 
+        border: 2px solid white;
+        border-radius: 30px;
+    }
+
+    .bantuan .btn-chat:hover{
+        background-color: white;
+        color: #0090ef;
+        border: 0.5px solid #0090ef;
+    }
+
+    .far{
+        font-size:20px;
+        margin-right: 10px;
+    }
+
+    .footer{
+    background-color:#303030;
+    padding:50px 20px 15px 20px;
+    font-size:15px;
+    line-height:24px;
+    color:#7f7f7f;
+    }
+
+    .footer .container{
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .footer-column-title{
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-weight: bold;
+    }
+
+    .footer-contact{
+        font-size: 12px;
+        color:#c5c5c5;
+    }
+
+    .footer-contact a{
+        color:#c5c5c5;
+    }
+
+    .footer-address{
+        font-size: 12px;
+        color:#c5c5c5;
+    }
+
+    .footer-menu-list a{
+        font-size: 12px;
+        color:#c5c5c5;
+    }
+
+    .footer-pembayaran{
+        font-size: 12px;
+        color:#606060;
+    }
+
+    .footer-pembayaran object{
+        max-height:33px; 
+        margin-right:5px;
+        padding: 5px;
+        border:0.5px solid #606060;
+        border-radius:5px;
+    }
+
+    /* .footer-pembayaran path{
+        color:red;
+    } */
+
+
+    .footer ul{
+        list-style-type:none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .newsletter .form-control {
+        width:230px;
+        height: 45px;
+        padding-left: 20px;
+        border-color: #ffffff;
+        border-radius:50px;
+        font-family: Montserrat;
+        font-size: 12px;
+        color: #b3b3b3;
+        background-color: white;
+        position: relative;
+    }
+
+    .newsletter .btn {
+        margin-top: -73px;
+        margin-left: 49%;
+        height: 60%; 
+        border-radius:0;
+        background: blue;
+        color: #fff;
+        font-family: Montserrat;
+        font-weight:light;
+        font-size:12px;
+        border-radius:30px;
+        background: #0090ef;
+        position: relative;
+        z-index: 99; 
+    }
+
+
+
+    .newsletter p {
+        margin-top: 1px;
+        line-height: 20px;
+    }
+
+    .footer-copyright{
+        font-size: 10px;
+        color:#c5c5c5;
+    }
+
+    .footer-privacy-policy {
+        font-size: 10px;
+        color:#c5c5c5;
+    }
+
+    .footer-privacy-policy a{
+        color:#c5c5c5;
+    }
+
+    .footer-social-icon-list .fab {
+    padding: 15px;
+    font-size: 15px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 10px;
+    border-radius: 50%;
+    border: 2px solid #d4d4d4;
+    color:#d4d4d4;  
+    }
+
+}
+/* DESKTOP VERSION END */

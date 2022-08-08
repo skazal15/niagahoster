@@ -1,0 +1,118 @@
+version: '3.9'
+services:
+
+  #Laravel App
+  app:
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+    container_name: app
+    tty: true
+    ports:
+      - "9000:9000"
+    environment:
+      SERVICE_NAME: app
+      SERVICE_TAGS: dev
+    volumes:
+      - ./:/var/www/html
+    depends_on:
+      - db
+    networks:
+      - mynet
+
+  #MySQL Service
+  db:
+    image: mysql
+    container_name: db
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: niagahoster
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user
+      MYSQL_ROOT_PASSWORD: root
+    
+    volumes:
+      - ./niagahoster.sql:/docker-entrypoint-initdb.d/init.sql
+      - mysqldata:/var/lib/mysql/
+    networks:
+      - mynet
+  
+  db1:
+    image: mysql
+    container_name: db1
+    restart: unless-stopped
+    tty: true
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_DATABASE: boxbilling
+      MYSQL_USER: user
+      MYSQL_PASSWORD: user
+      MYSQL_ROOT_PASSWORD: root
+    
+    volumes:
+      - ./boxbilling.sql:/docker-entrypoint-initdb.d/init.sql
+      - mysqldata1:/var/lib/mysql/
+    networks:
+      - mynet1
+
+  #Database Management
+  pma:
+    image: phpmyadmin
+    environment:
+      PMA_ARBITRARY: 1
+      PMA_HOST: db
+      PMA_USER: root
+      PMA_PASSWORD: root
+    depends_on:
+      - db
+    ports:
+      - "8888:80"
+    networks:
+      - mynet
+  pma1:
+    image: phpmyadmin
+    environment:
+      PMA_ARBITRARY: 1
+      PMA_HOST: db1
+      PMA_USER: root
+      PMA_PASSWORD: root
+    depends_on:
+      - db1
+    ports:
+      - "8889:80"
+    networks:
+      - mynet1
+
+  #Boxbillingservice
+  boxbilling:
+    build:
+      context: .
+      dockerfile: .docker/boxbilling.dockerfile
+    container_name: boxbilling
+    tty: true
+    ports:
+      - "8004:8004"
+    environment:
+      SERVICE_NAME: boxbilling
+      SERVICE_TAGS: dev
+    volumes:
+      - ./:/app/public
+    depends_on:
+      - db1
+    networks:
+      - mynet1
+      
+#Docker Networks
+networks:
+  mynet:
+  mynet1:
+    driver: bridge
+#Volumes
+volumes:
+  mysqldata:
+  mysqldata1:
+    driver: local
