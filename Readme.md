@@ -1,4 +1,4 @@
-# ![NiagaHoster Frontend]
+# NiagaHoster Frontend
 
 # Requirements
 NiagaHoster Frontend  is built using laravel FrameWork version 9.23.0, Bootstrap 4.5.0, and Font-Awesome 4.7.0
