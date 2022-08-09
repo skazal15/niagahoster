@@ -18,7 +18,7 @@ services:
     depends_on:
       - db
     networks:
-      - mynet
+      - mynet2
 
   #MySQL Service
   db:
@@ -38,7 +38,7 @@ services:
       - ./niagahoster.sql:/docker-entrypoint-initdb.d/init.sql
       - mysqldata:/var/lib/mysql/
     networks:
-      - mynet
+      - mynet2
   
   db1:
     image: mysql
@@ -72,7 +72,7 @@ services:
     ports:
       - "8888:80"
     networks:
-      - mynet
+      - mynet2
   pma1:
     image: phpmyadmin
     environment:
@@ -108,7 +108,7 @@ services:
       
 #Docker Networks
 networks:
-  mynet:
+  mynet2:
   mynet1:
     driver: bridge
 #Volumes

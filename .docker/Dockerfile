@@ -37,7 +37,6 @@ RUN rm -rf /var/cache/apk/*
 
 # Add UID '1000' to www-data
 RUN usermod -u 1000 www-data
-RUN mv .env.x .env
 
 # Copy existing application directory permissions
 COPY --chown=www-data:www-data . /var/www/html
@@ -48,4 +47,4 @@ USER www-data
 # Expose port 9000 and start php-fpm server
 EXPOSE 9000
 
-CMD ["composer install && php artisan migrate:fresh --seed && php artisan serve --host=0.0.0.0 --port=9000"]
+CMD ["sh","run.sh"]
